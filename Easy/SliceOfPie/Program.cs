@@ -31,10 +31,10 @@ class Program
 
         //reading # of total slices from input:
         int slices = int.Parse(Console.ReadLine());
- 
+
         //reading # of recipients from input:
         int recipients = int.Parse(Console.ReadLine());
-        
+
         //reading # of slices per recipient from input:
         int perPerson = int.Parse(Console.ReadLine());
 
@@ -46,6 +46,6 @@ class Program
     //creating method that calculates if a pie can be split fairly:
     public static bool EqualSlices(int slices, int recipients, int perPerson)
     {
-        return (recipients * perPerson) % slices == 0;
+        return (recipients * perPerson) <= slices;
     }
 }
