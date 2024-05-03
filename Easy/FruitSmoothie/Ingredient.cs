@@ -10,6 +10,5 @@ namespace FruitSmoothie
     {
         public string Name { get; set; }
         public Decimal Price { get; set; }
-        public string Currency { get; set; }
     }
 }
