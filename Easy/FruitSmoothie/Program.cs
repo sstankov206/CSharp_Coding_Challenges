@@ -43,10 +43,19 @@ class Program {
         Console.WriteLine(smoothie1.GetPrice());
         Console.WriteLine(smoothie1.GetName());
         Console.WriteLine();
+
     var smoothie2 = new FruitSmoothie.FruitSmoothie(new string[] { "Raspberries", "Strawberries", "Blueberries" });
         Console.WriteLine(string.Join(", ", smoothie2.Ingredients));
         Console.WriteLine(smoothie2.GetCost());
         Console.WriteLine(smoothie2.GetPrice());
         Console.WriteLine(smoothie2.GetName());
+
+        Console.WriteLine();
+    var water1 = new FruitSmoothie.Water(new string[] { "Bankya", "Devin" });
+    Console.WriteLine(string.Join(", ", water1.Ingredients));
+        Console.WriteLine(water1.GetCost());
+        Console.WriteLine(water1.GetPrice());
+        Console.WriteLine(water1.GetName());
     } 
+   
 }
