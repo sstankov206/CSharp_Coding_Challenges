@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvertisementMessageRedo", "AdvertisementMessageRedo.csproj", "{65FA0D1E-EF44-477D-9364-68BB7229B734}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65FA0D1E-EF44-477D-9364-68BB7229B734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65FA0D1E-EF44-477D-9364-68BB7229B734}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65FA0D1E-EF44-477D-9364-68BB7229B734}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65FA0D1E-EF44-477D-9364-68BB7229B734}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5379900-3B1C-4750-AD23-5509C1F8C139}
+	EndGlobalSection
+EndGlobal
