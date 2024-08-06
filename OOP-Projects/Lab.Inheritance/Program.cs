@@ -1,8 +1,7 @@
 ﻿// Lab: Inheritace
 //Requirements: https://judge.softuni.org/Contests/1499/Inheritance-Lab
 
-using System;
-using Farm;
+using Lab.Inheritance.Models;
 class Program
 {
     static void Main(string[] args)
