@@ -8,11 +8,12 @@ using System.Threading.Tasks;
 namespace oldestFamilyMember
 {
     public class Family
-    {
+    {   //property:
         public List<Person> People { get; set; }
+        
+        //constructor:
         public Family()
         {
-            //constructor:
             People = new List<Person>();
         }
 

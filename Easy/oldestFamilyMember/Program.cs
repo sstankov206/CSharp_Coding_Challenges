@@ -11,7 +11,7 @@ class Program
         for (int i = 0; i < input; i++) 
         {
             string[] inputParams = Console.ReadLine().Split(" ");  
-            Person person = new Person(inputParams[0], int.Parse(inputParams[1]));
+            Person person = new Person(inputParams[0], int.Parse(inputParams[1])); //name, age
             family.AddMember(person);
             
         }
