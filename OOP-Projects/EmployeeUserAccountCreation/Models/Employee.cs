@@ -2,6 +2,7 @@
 
 namespace EmployeeUserAccountCreation.Models
 {
+   //This class will reprsent an employee account.
     public class Employee
     {
         public string Name { get; private set; }
