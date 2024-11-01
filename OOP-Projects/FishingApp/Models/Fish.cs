@@ -5,22 +5,21 @@ using System.Collections.Generic;
 namespace FishingApp.Models
 {
     //Base clas:
-    public class Fish
+    public abstract class Fish
     {
-        public string Name { get; set; }
-        public double Weight { get; set; }
-        public string Habitat { get; set; }
+        public string Name { get; }
+        public int Weight { get; } //in pounds (lbs.)
 
-        public Fish(string name, double weight, string habitat)
+        public Fish(string name, int weight)
         {
             Name = name;
             Weight = weight;
-            Habitat = habitat;
+
         }
 
-        public virtual void DisplayInfo()
+        public override string ToString()
         {
-            Console.WriteLine($"Fish: {Name}, Weight: {Weight} lbs, Habitat: {Habitat}");
+            return $"{Name} ({Weight} lbs)";
         }
     }
 }

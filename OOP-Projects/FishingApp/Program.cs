@@ -10,6 +10,15 @@ class Program
 {
     static void Main(string[] args)
     { 
-    
+        //Start a fishing trip
+        FishingTrip trip = new FishingTrip();
+        trip.StartTrip();
+
+        //Display caught fish
+        Console.WriteLine("\nCaught Fish:");
+        foreach (var fish in trip.CaughtFish)
+        {
+            Console.WriteLine(fish);
+        }
     }
 }

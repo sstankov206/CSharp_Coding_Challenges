@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.AccessControl;
 
 namespace FishingApp.Models
 {
@@ -7,17 +8,16 @@ namespace FishingApp.Models
 
     public class FreshwaterFish : Fish
     {
-        public string FreshwaterType {  get; set; }
-        public FreshwaterFish(string name, double weight, string habitat, string freshwaterType)
-        :base(name, weight, habitat)
+        public string LakeType {  get;} //e.g., "lake", "river"
+        public FreshwaterFish(string name, int weight, string lakeType)
+        :base(name, weight)
         {
-            FreshwaterType = freshwaterType;
+            LakeType = lakeType;
         }
 
-        public override void DisplayInfo()
-        { 
-            base.DisplayInfo();
-            Console.WriteLine($"Freshwater Type: {FreshwaterType}");
+        public override string ToString()
+        {
+            return $"{base.ToString()} - Habitat: Freshwater ({LakeType})";
         }
     }
 }

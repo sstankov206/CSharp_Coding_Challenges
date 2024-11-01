@@ -6,17 +6,16 @@ namespace FishingApp.Models
     //Another Derived Class:
     public class SaltwaterFish : Fish
     {
-        public string SaltwaterType { get; set; }
-        public SaltwaterFish(string name, double weight, string habitat, string saltwaterType)
-            : base(name, weight, habitat)
+        public string OceanType { get; } // e.g., "Atlanatic", "Pacific"
+        public SaltwaterFish(string name, int weight, string oceanType)
+            : base(name, weight)
         {
-            SaltwaterType = saltwaterType;
+            OceanType = oceanType;
         }
 
-        public override void DisplayInfo()
+        public override string ToString()
         {
-            base.DisplayInfo();
-            Console.WriteLine($"Saltwater Type: {SaltwaterType}");
+            return $"{base.ToString()} - Habitat: Saltwater ({OceanType})";
         }
 
     }
