@@ -11,8 +11,10 @@
 using System;
 using System.Linq;
 using PersonManager.Models;
-
 class Program
 { 
+    static void Main(string[] args)
+    {
 
+    }
 }
