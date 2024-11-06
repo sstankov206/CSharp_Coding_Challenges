@@ -40,7 +40,7 @@ namespace PersonManager.Models
         {
             var sorted = people.OrderBy(p => p.Age).ToList();
             Console.WriteLine("\nSorted by Age:");
-            foreach (var person in people)
+            foreach (var person in sorted)
             {
                 Console.WriteLine(person);
             }
