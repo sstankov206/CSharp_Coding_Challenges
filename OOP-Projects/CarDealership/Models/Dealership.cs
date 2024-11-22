@@ -12,5 +12,10 @@ namespace CarDealership.Models
         {
             Inventory = new List<Car>();
         }
+
+        public void AddCar(Car car)
+        {
+            Inventory.Add(car);
+        }
     }
 }
