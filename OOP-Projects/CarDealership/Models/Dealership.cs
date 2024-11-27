@@ -37,5 +37,20 @@ namespace CarDealership.Models
 
             return query.ToList();
         }
+
+        public void ShowCars(List<Car> cars)
+        {
+            if (cars.Any())
+            {
+                foreach (var car in cars)
+                {
+                    Console.WriteLine(car);
+                }
+            }
+            else
+            {
+                Console.WriteLine("No cars found matching the criteria.");
+            }
+        }
     }
 }
