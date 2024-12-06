@@ -19,5 +19,21 @@ namespace Superheroes.Models
         public List<Movie> Movies { get; set; }
         public List<ComicBook> Comics { get; set; }
         public List<string> CatchPhrases { get; set; }
+
+        // Constructor to initialize the superhero object
+        public Superhero(string name, Universe universe, string hometown, int? age, string superpower,
+                         CharacterType characterType, RaceType raceType)
+        {
+            Name = name;
+            Universe = universe;
+            Hometown = hometown;
+            Age = age;
+            Superpower = superpower;
+            CharacterType = characterType;
+            RaceType = raceType;
+            Movies = new List<Movie>();
+            Comics = new List<ComicBook>();
+            CatchPhrases = new List<string>();
+        }
     }
 }
