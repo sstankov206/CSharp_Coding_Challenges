@@ -35,5 +35,30 @@ namespace Superheroes.Models
             Comics = new List<ComicBook>();
             CatchPhrases = new List<string>();
         }
+
+        public class Movie
+        {
+            public string Title { get; set; }
+            public int Year { get; set; }
+
+            public Movie(string title, int year)
+            {
+                Title = title;
+                Year = year;
+            }
+        }
+
+        public class ComicBook
+        {
+            public string Title { get; set; }
+            public int Year { get; set; }
+
+            public ComicBook(string title, int year)
+            {
+                Title = title;
+                Year = year;
+            }
+        }
     }
 }
+
