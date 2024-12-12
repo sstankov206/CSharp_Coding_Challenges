@@ -18,7 +18,9 @@ using Superheroes.Models;
 class Program
 {
     static void Main(string[] args)
-    {
+    { // Create the manager
+        SuperheroManager manager = new SuperheroManager();
+
 
     }
 }
