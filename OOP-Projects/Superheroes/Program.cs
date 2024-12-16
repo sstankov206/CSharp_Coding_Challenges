@@ -36,5 +36,13 @@ class Program
         manager.AddSuperhero(batman);
         manager.AddSuperhero(superman);
 
+        // Example: Querying and filtering
+        var dcHeroes = manager.FilterByUniverse(Universe.DC);
+        Console.WriteLine("DC Heroes:");
+        foreach (var hero in dcHeroes)
+        {
+            Console.WriteLine(hero.Name);
+        }
+
     }
 }
