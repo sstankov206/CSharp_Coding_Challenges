@@ -44,5 +44,12 @@ class Program
             Console.WriteLine(hero.Name);
         }
 
+        var catchphraseQuery = manager.GetByCatchPhrase("I am vengeance, I am the night!");
+        Console.WriteLine("\nSuperheroes with this catchphrase:");
+        foreach (var hero in catchphraseQuery)
+        {
+            Console.WriteLine(hero.Name);
+        }
+
     }
 }
